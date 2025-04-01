@@ -30,6 +30,12 @@ public class Byte : MonoBehaviour
         }
     }
 
+    public string getHex()
+    {
+        string HexValue = value.ToString("X2");
+        return HexValue;
+    }
+
     public void SetValue(int newValue)
     {
         if (newValue > 255)
